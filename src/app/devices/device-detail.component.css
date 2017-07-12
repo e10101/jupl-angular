@@ -1,0 +1,18 @@
+.setting-type {
+    width: 300px;
+}
+.setting-content {
+    color: gray;
+}
+.inline {
+    display: inline-block;
+}
+.settings {
+    padding: 30px;
+}
+.setting-full-width {
+  width: 100%;
+}
+.setting-footer {
+    margin-top: 20px;
+}
