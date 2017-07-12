@@ -52,3 +52,4 @@ ng serve --port 4208 --open
  - Add more test
  - Rewrite the html elements to directives
  - Add sub routes
+ - Add login module and remove the hard coded authorization header
