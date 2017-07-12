@@ -4,11 +4,13 @@
       <a md-list-item *ngFor="let device of devices" [routerLink]="['/device', device.VigilId]">
         <md-icon md-list-icon>devices</md-icon>
         <h4 md-line>{{device.VigilId}}</h4>
-        <p md-line> {{device.Uid}}</p>
+        <p md-line>
+          <span>{{device.Uid}}</span>
+        </p>
         <span class="spacer"></span>
-        <span mdTooltip="14 Alerts">
+        <button md-button>
           <md-icon>report_problem</md-icon> 14
-        </span>
+        </button>
       </a>
       <md-divider></md-divider>
     </md-nav-list>

@@ -56,7 +56,32 @@ const DEVICES: Device[] = [
                 'VerboseLogging': false
             }
         }
+    },
+    {
+    'VigilId': 40074,
+    'Uid': 'R5AJ20D1PAH',
+    'Model': {
+        'RuntimeSettings': {
+            'ReportInterval': 900,
+            'PingInterval': 900,
+            'PreAlarmPeriod': 10,
+            'AdherenceCheckInterval': 3600,
+            'AlarmClearTimeout': 600,
+            'AlarmCancelTimeout': 15,
+            'DailyReportInterval': 43200,
+            'GeoLocationRetryCount': 3,
+            'GeoLocationHighAccuracy': true,
+            'GeoLocationTimeOut': 5000,
+            'GeoMaxAgeTimeOut': 60,
+            'CmfPhoneNumber': null,
+            'PalmTouchTrigger': true,
+            'TouchTriggerCooldownPeriod': 30,
+            'DemoMode': false,
+            'DeviceName': null,
+            'VerboseLogging': false
+        }
     }
+}
 ];
 
 const devicesPromise = Promise.resolve(DEVICES);
