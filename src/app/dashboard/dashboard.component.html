@@ -1,0 +1,16 @@
+<div>
+    <md-grid-list cols="3" rowHeight="2:1" class="cards">
+        <md-grid-tile *ngFor="let card of cards">
+            <md-card class="card">
+                <md-card-title>
+                    <span>{{card.title}}</span>
+                </md-card-title>
+                <md-card-content>
+                    <p>
+                        {{card.content}}
+                    </p>
+                </md-card-content>
+            </md-card>
+        </md-grid-tile>
+    </md-grid-list>
+</div>

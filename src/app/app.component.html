@@ -1,8 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
+<md-toolbar color="primary">
+  
+  <a md-button routerLink="/" class="tool-bar-logo">Jupl</a>
+  <a md-button routerLink="/devices">Devices</a>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="spacer"></span>
+  <a md-button target="_blank" href="https://github.com/e10101/jupl-angular"><md-icon>code</md-icon> Source Code</a>
+</md-toolbar>
+<div class="content">
+  <router-outlet></router-outlet>
 </div>
-<button md-button>Click me!</button>
-<router-outlet></router-outlet>

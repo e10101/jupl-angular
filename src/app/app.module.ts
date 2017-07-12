@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
 import { DevicesModule } from './devices/devices.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,10 +26,13 @@ import { PageNotFoundComponent } from './not-found.component';
   imports: [
     BrowserModule,
     DevicesModule,
-    AppRoutingModule,
+    DashboardModule,
     HttpModule,
     MaterialModule,
     BrowserAnimationsModule,
+
+
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

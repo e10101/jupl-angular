@@ -5,7 +5,7 @@ import { PageNotFoundComponent } from './not-found.component';
 
 
 const appRoutes: Routes = [
-  { path: '',   redirectTo: '/devices', pathMatch: 'full' },
+  { path: '',   redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 

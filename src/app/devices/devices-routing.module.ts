@@ -5,7 +5,7 @@ import { DevicesComponent } from './devices.component';
 import { DeviceDetailComponent } from './device-detail.component';
 import { DeviceDetailConfigComponent } from './device-detail-config.component';
 
-const heroesRoutes: Routes = [
+const devicesRoutes: Routes = [
   { path: 'devices',  component: DevicesComponent },
   { path: 'device/config/:id', component: DeviceDetailConfigComponent },
   { path: 'device/:id', component: DeviceDetailComponent }
@@ -13,7 +13,7 @@ const heroesRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(heroesRoutes)
+    RouterModule.forChild(devicesRoutes)
   ],
   exports: [
     RouterModule
