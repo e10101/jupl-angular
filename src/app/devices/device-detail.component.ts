@@ -96,7 +96,7 @@ export class DeviceDetailComponent implements OnInit {
   updateRuntimeSettings(): void {
     this.DeviceService.updateDeviceRuntimeSettings(this.device)
       .then(() => {
-        this.snackBar.open('Update OK', null, {
+        this.snackBar.open('Updated!', null, {
           duration: 2000,
         });
       }

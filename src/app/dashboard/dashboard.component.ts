@@ -30,8 +30,7 @@ export class DashboardComponent {
       subtitle: 'Consectetur irure enim deserunt cillum dolor.',
       content: `Officia irure adipisicing consectetur quis.
       Tempor dolor culpa velit non. Enim incididunt sunt ad
-      fugiat tempor. Nulla quis ipsum in consequat exercitati
-      on laboris anim nostrud laborum magna ullamco dolore id.
+      fugiat tempor. Nulla quis anim nostrud laborum magna ullamco dolore id.
        Irure aliqua minim proident nulla anim occaecat.`
     },
     {

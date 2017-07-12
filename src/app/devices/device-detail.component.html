@@ -2,16 +2,18 @@
     <md-icon>keyboard_arrow_left</md-icon>
     Back
 </button>
-<h3 md-header>Device
+<!-- <h2 md-header>Device
     <span *ngIf="device">#{{device.VigilId}}</span>
-</h3>
+</h2> -->
 <md-tab-group>
     <md-tab label="Info">
-
+        <h3>Info Page</h3>
     </md-tab>
     <md-tab label="Alerts">
+        <h3>Alerts Page</h3>
     </md-tab>
     <md-tab label="Reports">
+        <h3>Reports Page</h3>
     </md-tab>
     <md-tab label="Runtime Settings">
         <div *ngIf="runtimeSettings" class="settings">
@@ -25,7 +27,7 @@
                             </md-input-container>
                         </div>
                         <span class="setting-content inline">
-                            The interval of report (ms)
+                            The interval of report, default: 1000
                         </span>
                     </div>
                     <div md-line>
@@ -35,7 +37,7 @@
                             </md-input-container>
                         </div>
                         <span class="setting-content inline">
-                            The interval of ping
+                            The interval of ping, default: 1000
                         </span>
                     </div>
                     <div md-line>
@@ -45,7 +47,7 @@
                             </md-input-container>
                         </div>
                         <span class="setting-content inline">
-                            The period pre alarm
+                            The period pre alarm, default: 10
                         </span>
                     </div>
                     <div md-line>
@@ -89,7 +91,6 @@
                         </span>
                     </div>
                 </div>
-                <md-divider></md-divider>
             </div>
 
             <div>
@@ -125,17 +126,15 @@
                             Max Age Time Out
                         </span>
                     </div>
-                    <div md-line>
+                    <div md-line class="setting-box">
                         <div class="setting-type inline">
                             <md-checkbox [(ngModel)]="runtimeSettings.GeoLocationHighAccuracy">Enable High Accuracy Location</md-checkbox>
-
                         </div>
                         <span class="setting-content inline">
                             Location High Accuracy
                         </span>
                     </div>
                 </div>
-                <md-divider></md-divider>
             </div>
 
             <div>
@@ -171,16 +170,15 @@
                             Touch Trigger Cooldown Period
                         </span>
                     </div>
-                    <div md-line>
+                    <div md-line class="setting-box">
                         <div class="setting-type inline">
                             <md-checkbox [(ngModel)]="runtimeSettings.PalmTouchTrigger">Enable Palm Touch Trigger</md-checkbox>
-
                         </div>
                         <span class="setting-content inline">
                             Palm Touch Trigger
                         </span>
                     </div>
-                    <div md-line>
+                    <div md-line class="setting-box">
                         <div class="setting-type inline">   
                             <md-checkbox [(ngModel)]="runtimeSettings.DemoMode">Enable Demo Mode</md-checkbox>
                         </div>
@@ -188,7 +186,7 @@
                             DemoMode
                         </span>
                     </div>
-                    <div md-line>
+                    <div md-line class="setting-box">
                         <div class="setting-type inline">
                             <md-checkbox [(ngModel)]="runtimeSettings.VerboseLogging">Enable verbose logging</md-checkbox>
                         </div>
@@ -197,7 +195,6 @@
                         </span>
                     </div>
                 </div>
-                <md-divider></md-divider>
             </div>
 
             <div class="setting-footer">
