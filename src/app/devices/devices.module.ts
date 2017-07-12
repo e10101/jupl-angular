@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from '@angular/material';
 
 import { DevicesComponent } from './devices.component';
 import { DeviceDetailComponent } from './device-detail.component';
@@ -13,7 +14,8 @@ import { DeviceDetailConfigComponent } from './device-detail-config.component';
   imports: [
     CommonModule,
     FormsModule,
-    DevicesRoutingModule
+    DevicesRoutingModule,
+    MaterialModule,
   ],
   declarations: [
     DevicesComponent,

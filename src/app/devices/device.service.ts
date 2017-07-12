@@ -33,27 +33,27 @@ const DEVICES: Device[] = [
     },
 
     {
-        'VigilId': 400723,
-        Uid: 'R3AJ1001EMH',
+        'VigilId': 40073,
+        'Uid': 'R5AJ206MP1D',
         'Model': {
             'RuntimeSettings': {
-                'ReportInterval': 1000,
-                'PingInterval': 1000,
+                'ReportInterval': 900,
+                'PingInterval': 900,
                 'PreAlarmPeriod': 10,
-                'AdherenceCheckInterval': 400,
-                'AlarmClearTimeout': 900,
+                'AdherenceCheckInterval': 3600,
+                'AlarmClearTimeout': 600,
                 'AlarmCancelTimeout': 15,
-                'DailyReportInterval': 42000,
-                'GeoLocationRetryCount': 5,
-                'GeoLocationHighAccuracy': false,
-                'GeoLocationTimeOut': 500,
+                'DailyReportInterval': 43200,
+                'GeoLocationRetryCount': 3,
+                'GeoLocationHighAccuracy': true,
+                'GeoLocationTimeOut': 5000,
                 'GeoMaxAgeTimeOut': 60,
-                'CmfPhoneNumber': '+64123456789',
-                'PalmTouchTrigger': false,
+                'CmfPhoneNumber': null,
+                'PalmTouchTrigger': true,
                 'TouchTriggerCooldownPeriod': 30,
                 'DemoMode': false,
-                'DeviceName': 'i can edit this again',
-                'VerboseLogging': true
+                'DeviceName': null,
+                'VerboseLogging': false
             }
         }
     }

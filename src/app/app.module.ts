@@ -31,7 +31,6 @@ import { PageNotFoundComponent } from './not-found.component';
     MaterialModule,
     BrowserAnimationsModule,
 
-
     AppRoutingModule,
   ],
   providers: [],
