@@ -79,9 +79,21 @@ export class DeviceService {
         //   .then(devices => devices.find(device => device.VigilId === +id));
 
         const url = `${this.devicesUrl}/${id}?names=RuntimeSettings`;
-        return this.http.get(url, {headers: this.headers})
+        return this.http.get(url, { headers: this.headers })
             .toPromise()
             .then(response => response.json() as Device)
+            .catch(this.handleError);
+    }
+
+    updateDeviceRuntimeSettings(device: Device): Promise<Device> {
+        const url = `${this.devicesUrl}/${device.VigilId}?names=RuntimeSettings`;
+        const newContent = {
+            RuntimeSettings: device.Model.RuntimeSettings
+        };
+        return this.http
+            .put(url, JSON.stringify(newContent), { headers: this.headers })
+            .toPromise()
+            .then(() => device)
             .catch(this.handleError);
     }
 

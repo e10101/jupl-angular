@@ -2,6 +2,9 @@
     <div>
         {{device.VigilId}}
     </div>
+    <div>
+        Device Name: {{device.Model.RuntimeSettings.DeviceName}}
+    </div>
+    <button (click)="gotoEdit()">Edit</button>
 </div>
-<button (click)="gotoEdit()">Edit</button>
 <button (click)="goBack()">Back</button>
