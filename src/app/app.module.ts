@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule} from '@angular/http';
 
 import { Router } from '@angular/router';
 
@@ -20,6 +21,7 @@ import { PageNotFoundComponent } from './not-found.component';
     BrowserModule,
     DevicesModule,
     AppRoutingModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

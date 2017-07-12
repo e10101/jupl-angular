@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { DevicesComponent } from './devices.component';
-
+import { DeviceDetailComponent } from './device-detail.component';
 import { DevicesRoutingModule } from './devices-routing.module';
+import { DeviceService } from './device.service';
+import { DeviceDetailConfigComponent } from './device-detail-config.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { DevicesRoutingModule } from './devices-routing.module';
   ],
   declarations: [
     DevicesComponent,
+    DeviceDetailComponent,
+    DeviceDetailConfigComponent,
   ],
-  providers: [  ]
+  providers: [ DeviceService ]
 })
 export class DevicesModule {}
