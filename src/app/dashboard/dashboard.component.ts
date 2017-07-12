@@ -9,6 +9,7 @@ export class DashboardComponent {
   cards = [
     {
       title: 'Anim minim ',
+      subtitle: 'Excepteur dolor id anim ea pariatur ex dolore ea.',
       content: `Deserunt velit id labore incididunt.
       Nostrud in non veniam eu irure. Ad aute minim
       ut id. Laborum adipisicing amet nisi ullamco
@@ -17,6 +18,7 @@ export class DashboardComponent {
     },
     {
       title: 'Exercitation',
+      subtitle: 'Duis ex velit consectetur mollit reprehenderit.',
       content: `Deserunt velit id labore incididunt.
        Nostrud in non veniam eu irure. Ad aute minim ut id.
         Laborum adipisicing amet nisi ullamco consequat est
@@ -25,6 +27,7 @@ export class DashboardComponent {
     },
     {
       title: 'Ad anim laborum fugi',
+      subtitle: 'Consectetur irure enim deserunt cillum dolor.',
       content: `Officia irure adipisicing consectetur quis.
       Tempor dolor culpa velit non. Enim incididunt sunt ad
       fugiat tempor. Nulla quis ipsum in consequat exercitati
@@ -33,6 +36,7 @@ export class DashboardComponent {
     },
     {
       title: 'Futeur.',
+      subtitle: 'Sunt deserunt officia tempor fugiat tempor.',
       content: `Esse aliquip laborum magna id. Sint sunt
        dolore aute culpa proident consequat. Minim excepteur
         magna laboris ipsum non ipsum.ia dolor anim consectetur
@@ -41,6 +45,7 @@ export class DashboardComponent {
     },
     {
       title: 'Fucepteur.',
+      subtitle: 'Ea nulla laboris amet eu ex.',
       content: `Lorem occaecat est cillum adipisicing labore
        in incididunt reprehenderit ad aliquip veniam. Consequat
         adipisicing culpa laborum qui duis. Dolore Lorem enim
@@ -48,6 +53,7 @@ export class DashboardComponent {
     },
     {
       title: 'Culpa culpa ',
+      subtitle: 'Eiusmod irure qui sint id duis.',
       content: `Non aliqua irure qui in ex.
        Ullamco sit irure laborum quis veniam
         aliquip duis. Est reprehenderit excepteur
