@@ -1,6 +1,7 @@
 # jupl-angular
 
-GAE Demo: https://jupl-angular.appspot.com/
+## Demo
+https://jupl-angular.appspot.com/
 
 ## Setup
 ```
@@ -47,6 +48,15 @@ ng serve --port 4208 --open
  - [Angular4](https://angular.io/)
  - [Material UI](https://material.angular.io/)
  - [VSCode](https://code.visualstudio.com/)
+ 
+## About the project
+ - By using the `ng-cli` tool to create the project, the main changes are under the `src/app` folder.
+ - Add the `Dashboard` module to display the default home page.
+ - Add the `Device` module to get and display device information.
+ - Add the `Devices` component to display all devices under the user account;
+ - Add the `DeviceDetail` component to display information for a specific Device. Currently, only the RuntimeSettings section is implemented.
+ - Get and update RuntimeSettings by using the `Device` service.
+ - Using the [Material UI](https://material.angular.io/), and `md-tab`, `md-toolbar`, `md-list`, `md-card` and other directives.
  
 
 ## Todo
