@@ -1,19 +1,22 @@
-<div>
-    <md-grid-list cols="3" rowHeight="5:3" class="cards">
-        <md-grid-tile *ngFor="let card of cards">
-            <md-card class="card">
-                <md-card-title>
-                    <span>{{card.title}}</span>
-                </md-card-title>
-                <md-card-subtitle>
-                    <span>{{card.subtitle}}</span>
-                </md-card-subtitle>
-                <md-card-content>
-                    <p>
-                        {{card.content}}
-                    </p>
-                </md-card-content>
-            </md-card>
-        </md-grid-tile>
-    </md-grid-list>
+<div *ngFor="let card of cards" class="card" (click)="cardClick()">
+  <md-card>
+    <md-card-title>
+      <span>{{card.title}}</span>
+    </md-card-title>
+    <md-card-subtitle>
+      <span>{{card.subtitle}}</span>
+    </md-card-subtitle>
+    <md-card-content>
+      <p>
+        {{card.content}}
+      </p>
+    </md-card-content>
+  </md-card>
 </div>
+<!--
+<md-grid-list cols="3" rowHeight="5:3" class="cards">
+  <md-grid-tile>
+
+
+  </md-grid-tile>
+</md-grid-list> -->

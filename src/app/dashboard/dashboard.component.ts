@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { MdSnackBar } from '@angular/material';
+
 @Component({
   selector: 'dashboard',
   templateUrl: './dashboard.component.html',
@@ -60,4 +62,14 @@ export class DashboardComponent {
           fugiat velit consectetur ipsum qui Lorem aute occaecat.`
     },
   ];
+
+  constructor(
+    public snackBar: MdSnackBar,
+  ) { };
+
+  cardClick(): void {
+    this.snackBar.open('Card Clicked!', null, {
+      duration: 1000,
+    });
+  };
 }

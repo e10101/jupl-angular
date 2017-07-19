@@ -1,3 +1,7 @@
 .card {
-    margin: 10px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    cursor: pointer;
+    vertical-align: top;
 }
