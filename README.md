@@ -57,6 +57,7 @@ ng serve --port 4208 --open
  - Add the `DeviceDetail` component to display information for a specific Device. Currently, only the RuntimeSettings section is implemented.
  - Get and update RuntimeSettings by using the `Device` service.
  - Using the [Material UI](https://material.angular.io/), and `md-tab`, `md-toolbar`, `md-list`, `md-card` and other directives.
+ - Deploy the program to [Google App Engine](https://cloud.google.com/appengine/) for online demonstration.
  
 
 ## Todo
