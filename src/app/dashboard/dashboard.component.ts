@@ -46,7 +46,7 @@ export class DashboardComponent {
     },
     {
       title: 'Fucepteur.',
-      subtitle: 'Ea nulla laboris amet eu ex.',
+      subtitle: 'Ea nulla laboris amet eu ex culpa laborum duis.',
       content: `Lorem occaecat est cillum adipisicing labore
        in incididunt reprehenderit ad aliquip veniam. Consequat
         adipisicing culpa laborum qui duis. Dolore Lorem enim
@@ -54,7 +54,7 @@ export class DashboardComponent {
     },
     {
       title: 'Culpa culpa ',
-      subtitle: 'Eiusmod irure qui sint id duis.',
+      subtitle: 'Eiusmod irure qui sint id duis ad aliquip veniam.',
       content: `Non aliqua irure qui in ex.
        Ullamco sit irure laborum quis veniam
         aliquip duis. Est reprehenderit excepteur
