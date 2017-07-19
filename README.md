@@ -50,7 +50,7 @@ ng serve --port 4208 --open
  - [VSCode](https://code.visualstudio.com/)
  
 ## About the project
- - By using the `ng-cli` tool to create the project, the main changes are under the `src/app` folder.
+ - By using the [ng-cli](https://github.com/angular/angular-cli) tool to create the project, the main changes are under the `src/app` folder.
  - Add the `Dashboard` module to display the default home page.
  - Add the `Device` module to get and display device information.
  - Add the `Devices` component to display all devices under the user account;
