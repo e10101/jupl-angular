@@ -33,6 +33,7 @@ ng serve --port 4208 --open
     |-- devices-routing.module
     |-- device  // model
     |-- device.service
+    |-- devices.mock // mock devices
     |-- devices.component(ts, html, css)
     |-- device-detail.component(ts, html, css)
     |-- device-detail-config.component(ts, html)
