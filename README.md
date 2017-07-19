@@ -1,5 +1,7 @@
 # jupl-angular
 
+GAE Demo: https://jupl-angular.appspot.com/
+
 ## Setup
 ```
 git clone https://github.com/e10101/jupl-angular.git
