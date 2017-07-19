@@ -6,204 +6,211 @@
     <span *ngIf="device">#{{device.VigilId}}</span>
 </h2> -->
 <md-tab-group>
-    <md-tab label="Info">
-        <h3>Info Page</h3>
-    </md-tab>
-    <md-tab label="Alerts">
-        <h3>Alerts Page</h3>
-    </md-tab>
-    <md-tab label="Reports">
-        <h3>Reports Page</h3>
-    </md-tab>
-    <md-tab label="Runtime Settings">
-        <div *ngIf="runtimeSettings" class="settings">
-            <div>
-                <h3 md-subheader>Intervals</h3>
-                <div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.ReportInterval" placeholder="Report Interval">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+  <md-tab label="Info">
+    <h3>Info Page</h3>
+  </md-tab>
+  <md-tab label="Alerts">
+    <h3>Alerts Page</h3>
+  </md-tab>
+  <md-tab label="Reports">
+    <h3>Reports Page</h3>
+  </md-tab>
+  <md-tab label="Runtime Settings">
+    <div *ngIf="runtimeSettings" class="settings">
+      <div class="settings-group">
+        <h3 md-subheader>Intervals</h3>
+        <div class="settings-contents">
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.ReportInterval" placeholder="Report Interval">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             The interval of report, default: 1000
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.PingInterval" placeholder="Ping Interval">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.PingInterval" placeholder="Ping Interval">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             The interval of ping, default: 1000
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.PreAlarmPeriod" placeholder="Pre Alarm Period">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.PreAlarmPeriod" placeholder="Pre Alarm Period">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             The period pre alarm, default: 10
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.AdherenceCheckInterval" placeholder="Adherence Check Interval">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.AdherenceCheckInterval" placeholder="Adherence Check Interval">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Adherence Check Interval
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.AlarmClearTimeout" placeholder="Alarm Clear Timeout">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.AlarmClearTimeout" placeholder="Alarm Clear Timeout">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             AlarmClearTimeout
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.AlarmCancelTimeout" placeholder="Alarm Cancel Timeout">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.AlarmCancelTimeout" placeholder="Alarm Cancel Timeout">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Alarm Cancel Timeout
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.DailyReportInterval" placeholder="Daily Report Interval">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.DailyReportInterval" placeholder="Daily Report Interval">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Daily Report Interval
                         </span>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
-            <div>
-                <h3 md-subheader>Location</h3>
-                <div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.GeoLocationRetryCount" placeholder="Geo Location Retry Count">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+      <div class="settings-group">
+        <h3 md-subheader>Location</h3>
+        <div class="settings-contents">
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.GeoLocationRetryCount" placeholder="Geo Location Retry Count">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Location Retry Count
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.GeoLocationTimeOut" placeholder="Geo Location Time Out">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.GeoLocationTimeOut" placeholder="Geo Location Time Out">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Location Time Out
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.GeoMaxAgeTimeOut" placeholder="Geo Max Age Time Out">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.GeoMaxAgeTimeOut" placeholder="Geo Max Age Time Out">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Max Age Time Out
                         </span>
-                    </div>
-                    <div md-line class="setting-box">
-                        <div class="setting-type inline">
-                            <md-checkbox [(ngModel)]="runtimeSettings.GeoLocationHighAccuracy">Enable High Accuracy Location</md-checkbox>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line class="setting-box">
+            <div class="setting-type inline">
+              <md-checkbox [(ngModel)]="runtimeSettings.GeoLocationHighAccuracy">Enable High Accuracy Location</md-checkbox>
+            </div>
+            <span class="setting-content inline">
                             Location High Accuracy
                         </span>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
-            <div>
-                <h3 md-subheader>Others</h3>
-                <div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="text" mdInput [(ngModel)]="runtimeSettings.CmfPhoneNumber" placeholder="Phone Number">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+      <div class="settings-group">
+        <h3 md-subheader>Others</h3>
+        <div class="settings-contents">
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="text" mdInput [(ngModel)]="runtimeSettings.CmfPhoneNumber" placeholder="Phone Number">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Cmf Phone Number
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="text" mdInput [(ngModel)]="runtimeSettings.DeviceName" placeholder="Device Name">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="text" mdInput [(ngModel)]="runtimeSettings.DeviceName" placeholder="Device Name">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Device Name
                         </span>
-                    </div>
-                    <div md-line>
-                        <div class="setting-type inline">
-                            <md-input-container class="setting-full-width">
-                                <input type="number" mdInput [(ngModel)]="runtimeSettings.TouchTriggerCooldownPeriod" placeholder="Touch Trigger Cooldown Period">
-                            </md-input-container>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line>
+            <div class="setting-type inline">
+              <md-input-container class="setting-full-width">
+                <input type="number" mdInput [(ngModel)]="runtimeSettings.TouchTriggerCooldownPeriod" placeholder="Touch Trigger Cooldown Period">
+              </md-input-container>
+            </div>
+            <span class="setting-content inline">
                             Touch Trigger Cooldown Period
                         </span>
-                    </div>
-                    <div md-line class="setting-box">
-                        <div class="setting-type inline">
-                            <md-checkbox [(ngModel)]="runtimeSettings.PalmTouchTrigger">Enable Palm Touch Trigger</md-checkbox>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line class="setting-box">
+            <div class="setting-type inline">
+              <md-checkbox [(ngModel)]="runtimeSettings.PalmTouchTrigger">Enable Palm Touch Trigger</md-checkbox>
+            </div>
+            <span class="setting-content inline">
                             Palm Touch Trigger
                         </span>
-                    </div>
-                    <div md-line class="setting-box">
-                        <div class="setting-type inline">   
-                            <md-checkbox [(ngModel)]="runtimeSettings.DemoMode">Enable Demo Mode</md-checkbox>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line class="setting-box">
+            <div class="setting-type inline">
+              <md-checkbox [(ngModel)]="runtimeSettings.DemoMode">Enable Demo Mode</md-checkbox>
+            </div>
+            <span class="setting-content inline">
                             DemoMode
                         </span>
-                    </div>
-                    <div md-line class="setting-box">
-                        <div class="setting-type inline">
-                            <md-checkbox [(ngModel)]="runtimeSettings.VerboseLogging">Enable verbose logging</md-checkbox>
-                        </div>
-                        <span class="setting-content inline">
+          </div>
+          <div md-line class="setting-box">
+            <div class="setting-type inline">
+              <md-checkbox [(ngModel)]="runtimeSettings.VerboseLogging">Enable verbose logging</md-checkbox>
+            </div>
+            <span class="setting-content inline">
                             Verbose Logging
                         </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="setting-footer">
-                <button md-raised-button (click)="updateRuntimeSettings()">Update settings</button>
-            </div>
+          </div>
         </div>
-    </md-tab>
+      </div>
+
+      <div>
+        <h3></h3>
+        <div class="settings-contents">
+
+          <div class="setting-footer">
+            <button md-raised-button (click)="updateRuntimeSettings()">Update settings</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </md-tab>
 </md-tab-group>
 
 <div *ngIf='!device'>
-    <md-spinner></md-spinner>
+  <md-spinner></md-spinner>
 </div>
