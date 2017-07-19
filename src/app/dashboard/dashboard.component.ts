@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 
 import { MdSnackBar } from '@angular/material';
 
+import { Card } from './card';
+
 @Component({
   selector: 'dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent {
-  cards = [
+  cards: Card[] = [
     {
       title: 'Anim minim ',
       subtitle: 'Excepteur dolor id anim ea pariatur ex dolore ea.',
@@ -67,8 +69,8 @@ export class DashboardComponent {
     public snackBar: MdSnackBar,
   ) { };
 
-  cardClick(): void {
-    this.snackBar.open('Card Clicked!', null, {
+  cardClick(card: Card): void {
+    this.snackBar.open(`Card <${card.title}> Clicked!`, null, {
       duration: 1000,
     });
   };

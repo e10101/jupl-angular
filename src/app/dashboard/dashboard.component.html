@@ -1,4 +1,4 @@
-<div *ngFor="let card of cards" class="card" (click)="cardClick()">
+<div *ngFor="let card of cards" class="card" (click)="cardClick(card)">
   <md-card>
     <md-card-title>
       <span>{{card.title}}</span>
