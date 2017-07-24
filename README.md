@@ -6,11 +6,15 @@ https://jupl-angular.appspot.com/
 ## Setup
 ```
 git clone https://github.com/e10101/jupl-angular.git
+cd jupl-angular
 ```
 
 ```
-cd jupl-angular
 npm install
+```
+OR
+```
+yarn install
 ```
 
 ## Run
